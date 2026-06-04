@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Door &amp; Window Schedule Builder | Architecture Render Studio</title>
+  <meta name="description" content="Paste door and window rows to get a validated, costed schedule with a CSV export.">
+  <link rel="canonical" href="https://render.ai-architect.com/door-window-schedule/">
+  <meta name="theme-color" content="#137a6e">
+  <meta property="og:title" content="Door &amp; Window Schedule Builder | Architecture Render Studio">
+  <meta property="og:description" content="Paste door and window rows to get a validated, costed schedule with a CSV export.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://render.ai-architect.com/door-window-schedule/">
+  <meta name="google-adsense-account" content="ca-pub-0268893833921284">
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-0268893833921284" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://rsms.me/">
+  <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body style="--bg:#eef1ec;--panel:#ffffff;--ink:#16201f;--accent:#137a6e;--accent-2:#c9772d;--line:#d8ded6">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"Door & Window Schedule Builder","applicationCategory":"DesignApplication","operatingSystem":"Web browser","url":"https://render.ai-architect.com/door-window-schedule/","description":"Paste door and window rows to get a validated, costed schedule with a CSV export.","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What format are rows?","acceptedAnswer":{"@type":"Answer","text":"Comma-separated: Mark, Qty, Unit cost, Size/notes — one item per line. Extra columns are kept."}},{"@type":"Question","name":"Does it total cost?","acceptedAnswer":{"@type":"Answer","text":"Yes — it multiplies quantity by unit cost across all rows and reports the estimated total."}}]}</script>
+<header class="topbar">
+    <a class="brand" href="../"><span class="brand-mark">AR</span><span>Architecture Render Studio<small>ai-architect.com</small></span></a>
+    <nav class="nav" aria-label="Primary">
+      <a href="../tools/">All tools</a>
+      <a href="../workspace/">Workspace</a>
+      <a href="../plans/">Plans</a>
+      <a href="../about/">About</a>
+      <a class="cta" href="../tool/">Open studio</a>
+    </nav>
+  </header>
+  <main>
+    <nav class="breadcrumb" aria-label="Breadcrumb"><a href="../">Home</a> / <a href="../tools/">Tools</a> / Door &amp; Window Schedule Builder</nav>
+    <section class="app-grid"><nav class="side-nav" aria-label="App sections"><span class="side-label">Workspace</span><a href="../"><span class="dot"></span>Dashboard</a><a href="../tools/"><span class="dot"></span>All tools</a><a href="../tool/"><span class="dot"></span>Render studio</a><a href="../workspace/"><span class="dot"></span>Workspace</a><a href="../reports/"><span class="dot"></span>Reports</a><a href="../templates/"><span class="dot"></span>Templates</a><a href="../settings/"><span class="dot"></span>Settings</a><a href="../integrations/"><span class="dot"></span>Integrations</a><a href="../plans/"><span class="dot"></span>Plans</a><a href="../faq/"><span class="dot"></span>FAQ</a><a href="../about/"><span class="dot"></span>About</a></nav><div class="workspace-main">
+      <div class="page-title-panel"><div><span class="category-chip">Schedules</span><h1>Door &amp; Window Schedule Builder</h1><p class="lede">Paste door and window rows to get a validated, costed schedule with a CSV export.</p><div class="tag-row"><span class="tag">door schedule</span><span class="tag">window schedule</span><span class="tag">CSV</span><span class="tag">take-off</span></div></div><div class="illus"><svg viewBox="0 0 120 120" width="120" height="120" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <rect x="3" y="3" width="114" height="114" rx="18" fill="#137a6e" fill-opacity="0.06" stroke="#137a6e" stroke-opacity="0.18"/>
+    <g transform="translate(38,38) scale(2.3)" stroke="#137a6e" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" fill="none"><rect x="12" y="13" width="20" height="18" rx="2"/><path d="M12 19 H32 M19 13 V31 M26 13 V31"/></g>
+  </svg></div></div>
+      <section class="hero-tool" id="tool">
+        <div class="tool-panel"><div class="panel-heading"><h2>Inputs</h2><span class="pill">Schedule builder</span></div><div class="fields-grid" id="toolFields"></div></div>
+        <div class="result-panel">
+      <div class="result-toolbar">
+        <h2>Result</h2>
+        <div class="toolbar-row">
+          <button class="button secondary" id="copyExport" type="button">Copy output</button>
+          <button class="button secondary" type="button" data-save-current>Save project</button>
+          <button class="button" type="button" data-download-current>Download JSON</button>
+        </div>
+      </div>
+      <div id="toolResult"></div>
+    </div>
+      </section>
+      <section class="content-band"><div class="section-heading"><h2>How it works</h2></div><p class="lede" style="max-width:78ch">Enter one item per line as Mark, Qty, Unit cost, Size/notes. The tool totals the cost, flags incomplete rows and outputs a clean CSV you can copy.</p></section>
+      <div class="ad-unit" aria-label="Advertisement"><span>Advertisement</span>
+      <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-0268893833921284" data-ad-slot="1234567890" data-ad-format="auto" data-full-width-responsive="true"></ins>
+      <script>(adsbygoogle = window.adsbygoogle || []).push({});</script></div>
+      <section class="content-band"><div class="section-heading"><h2>Use cases</h2><p>Real, repeatable workflows — not filler.</p></div><div class="example-grid" id="examples"></div></section>
+      <section class="content-band"><div class="section-heading"><h2>Good to know</h2><p>Every result is a planning-stage estimate that needs professional review.</p></div><ul class="checklist" id="limits"></ul></section>
+      <section class="content-band"><div class="section-heading"><h2>FAQ</h2></div><div id="faq"></div></section>
+      <section class="content-band"><div class="section-heading"><h2>Related tools</h2><p>Keep moving through the workflow.</p></div><div class="card-grid"><a class="tool-card" href="../room-finish-schedule/"><span class="icon"><svg viewBox="0 0 44 44" width="44" height="44" fill="none" stroke="#137a6e" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg"><rect x="1.5" y="1.5" width="41" height="41" rx="11" fill="#137a6e" fill-opacity="0.08" stroke="#137a6e" stroke-opacity="0.25"/><rect x="12" y="13" width="20" height="18" rx="2"/><path d="M12 19 H32 M19 13 V31 M26 13 V31"/></svg></span><span class="meta">Schedules</span><h3>Room Finish Schedule Builder</h3><p>Build a room-by-room finishes schedule for floor, wall and ceiling with validation.</p><span class="open">Open tool →</span></a><a class="tool-card" href="../furniture-schedule/"><span class="icon"><svg viewBox="0 0 44 44" width="44" height="44" fill="none" stroke="#137a6e" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg"><rect x="1.5" y="1.5" width="41" height="41" rx="11" fill="#137a6e" fill-opacity="0.08" stroke="#137a6e" stroke-opacity="0.25"/><rect x="12" y="13" width="20" height="18" rx="2"/><path d="M12 19 H32 M19 13 V31 M26 13 V31"/></svg></span><span class="meta">Schedules</span><h3>Furniture &amp; FF&amp;E Schedule Builder</h3><p>Cost a furniture, fixtures and equipment schedule from pasted rows with quantities and rates.</p><span class="open">Open tool →</span></a><a class="tool-card" href="../exterior-render-prompt/"><span class="icon"><svg viewBox="0 0 44 44" width="44" height="44" fill="none" stroke="#137a6e" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg"><rect x="1.5" y="1.5" width="41" height="41" rx="11" fill="#137a6e" fill-opacity="0.08" stroke="#137a6e" stroke-opacity="0.25"/><path d="M13 30 L20 18 L27 26 L31 22 L31 30 Z" fill="#137a6e" fill-opacity="0.15"/><circle cx="17" cy="16" r="2.4"/><rect x="12" y="13" width="20" height="18" rx="2"/></svg></span><span class="meta">Render Prompts</span><h3>Exterior Render Prompt Builder</h3><p>Compose a controlled, buildable exterior visualisation prompt from massing, materials, context and light.</p><span class="open">Open tool →</span></a></div></section>
+    </div></section>
+  </main>
+<footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <a class="brand" href="../"><span class="brand-mark">AR</span><span>Architecture Render Studio</span></a>
+        <p>A free, browser-side toolkit of 52+ architectural calculators, prompt builders and references. Nothing leaves your browser unless you export it.</p>
+      </div>
+      <div class="footer-col"><h4>Studio</h4><a href="../tool/">Render studio</a><a href="../tools/">All tools</a><a href="../workspace/">Workspace</a><a href="../plans/">Plans</a></div><div class="footer-col"><h4>Popular</h4><a href="../far-calculator/">FAR calculator</a><a href="../stair-calculator/">Stair calculator</a><a href="../exterior-render-prompt/">Exterior render prompt</a><a href="../color-contrast-checker/">Colour contrast</a></div><div class="footer-col"><h4>Company</h4><a href="../about/">About</a><a href="../faq/">FAQ</a><a href="../integrations/">Integrations</a><a href="../privacy/">Privacy</a></div>
+    </div>
+    <div class="footer-base">
+      <span>© 2026 ai-architect.com · Planning-stage tools — verify with a licensed professional.</span>
+      <span><a href="../privacy/">Privacy</a> · <a href="../sitemap.xml">Sitemap</a></span>
+    </div>
+  </footer>
+<script>window.SITE_CONFIG = {"title":"Door & Window Schedule Builder","kind":"schedule","fields":[{"id":"rows","label":"Items (Mark, Qty, Unit cost, Size/notes)","type":"textarea","default":"D01, 4, 320, 900x2100 solid core\nD02, 2, 540, 1800x2100 double glazed\nW01, 6, 410, 1200x1500 awning\nW02, 3, 690, 2400x1500 fixed","rows":8}],"data":{},"engine":{"columns":["Mark","Qty","Unit cost","Size / notes"],"qtyIndex":1,"costIndex":2},"examples":[{"title":"Tender take-off","body":"Paste the door and window marks with quantities and rates to get a quick costed total for pricing."},{"title":"Gap check","body":"Incomplete rows are flagged so you don't tender a schedule with a missing size or rate."},{"title":"Hand to estimator","body":"Copy the CSV straight into a spreadsheet for the cost plan."}],"faq":[{"q":"What format are rows?","a":"Comma-separated: Mark, Qty, Unit cost, Size/notes — one item per line. Extra columns are kept."},{"q":"Does it total cost?","a":"Yes — it multiplies quantity by unit cost across all rows and reports the estimated total."}],"limits":["Results are planning-stage estimates — confirm against local codes, manufacturer data, and a licensed professional before issuing for construction.","No login or private credentials are required; saved projects stay in this browser's local storage.","Advertising is kept clear of primary action controls and never blocks tool inputs."]};</script>
+  <script src="../app.js"></script>
+  <script src="../saas.js"></script>
+</body>
+</html>

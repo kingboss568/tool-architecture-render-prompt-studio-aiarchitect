@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Solar PV Sizing Calculator | Architecture Render Studio</title>
+  <meta name="description" content="Estimate array size, panel count and roof area from daily energy use and local sun hours.">
+  <link rel="canonical" href="https://render.ai-architect.com/solar-panel-calculator/">
+  <meta name="theme-color" content="#137a6e">
+  <meta property="og:title" content="Solar PV Sizing Calculator | Architecture Render Studio">
+  <meta property="og:description" content="Estimate array size, panel count and roof area from daily energy use and local sun hours.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://render.ai-architect.com/solar-panel-calculator/">
+  <meta name="google-adsense-account" content="ca-pub-0268893833921284">
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-0268893833921284" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://rsms.me/">
+  <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body style="--bg:#eef1ec;--panel:#ffffff;--ink:#16201f;--accent:#137a6e;--accent-2:#c9772d;--line:#d8ded6">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"Solar PV Sizing Calculator","applicationCategory":"DesignApplication","operatingSystem":"Web browser","url":"https://render.ai-architect.com/solar-panel-calculator/","description":"Estimate array size, panel count and roof area from daily energy use and local sun hours.","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What are peak sun hours?","acceptedAnswer":{"@type":"Answer","text":"The equivalent hours of full-strength sun per day for your location — pull it from a local solar resource map."}},{"@type":"Question","name":"Why a loss factor?","acceptedAnswer":{"@type":"Answer","text":"Real systems lose ~15–25% to temperature, wiring, inverter and soiling. Adjust for your conditions."}}]}</script>
+<header class="topbar">
+    <a class="brand" href="../"><span class="brand-mark">AR</span><span>Architecture Render Studio<small>ai-architect.com</small></span></a>
+    <nav class="nav" aria-label="Primary">
+      <a href="../tools/">All tools</a>
+      <a href="../workspace/">Workspace</a>
+      <a href="../plans/">Plans</a>
+      <a href="../about/">About</a>
+      <a class="cta" href="../tool/">Open studio</a>
+    </nav>
+  </header>
+  <main>
+    <nav class="breadcrumb" aria-label="Breadcrumb"><a href="../">Home</a> / <a href="../tools/">Tools</a> / Solar PV Sizing Calculator</nav>
+    <section class="app-grid"><nav class="side-nav" aria-label="App sections"><span class="side-label">Workspace</span><a href="../"><span class="dot"></span>Dashboard</a><a href="../tools/"><span class="dot"></span>All tools</a><a href="../tool/"><span class="dot"></span>Render studio</a><a href="../workspace/"><span class="dot"></span>Workspace</a><a href="../reports/"><span class="dot"></span>Reports</a><a href="../templates/"><span class="dot"></span>Templates</a><a href="../settings/"><span class="dot"></span>Settings</a><a href="../integrations/"><span class="dot"></span>Integrations</a><a href="../plans/"><span class="dot"></span>Plans</a><a href="../faq/"><span class="dot"></span>FAQ</a><a href="../about/"><span class="dot"></span>About</a></nav><div class="workspace-main">
+      <div class="page-title-panel"><div><span class="category-chip">Calculators</span><h1>Solar PV Sizing Calculator</h1><p class="lede">Estimate array size, panel count and roof area from daily energy use and local sun hours.</p><div class="tag-row"><span class="tag">solar</span><span class="tag">PV</span><span class="tag">renewables</span><span class="tag">energy</span></div></div><div class="illus"><svg viewBox="0 0 120 120" width="120" height="120" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <rect x="3" y="3" width="114" height="114" rx="18" fill="#137a6e" fill-opacity="0.06" stroke="#137a6e" stroke-opacity="0.18"/>
+    <g transform="translate(38,38) scale(2.3)" stroke="#137a6e" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" fill="none"><rect x="13" y="11" width="18" height="22" rx="2"/><path d="M17 16 H27 M17 22 H19 M22 22 H24 M27 22 V28 M17 27 H19 M22 27 H24"/></g>
+  </svg></div></div>
+      <section class="hero-tool" id="tool">
+        <div class="tool-panel"><div class="panel-heading"><h2>Inputs</h2><span class="pill">Live calculator</span></div><div class="fields-grid" id="toolFields"></div></div>
+        <div class="result-panel">
+      <div class="result-toolbar">
+        <h2>Result</h2>
+        <div class="toolbar-row">
+          <button class="button secondary" id="copyExport" type="button">Copy output</button>
+          <button class="button secondary" type="button" data-save-current>Save project</button>
+          <button class="button" type="button" data-download-current>Download JSON</button>
+        </div>
+      </div>
+      <div id="toolResult"></div>
+    </div>
+      </section>
+      <section class="content-band"><div class="section-heading"><h2>How it works</h2></div><p class="lede" style="max-width:78ch">Enter daily energy use, peak sun hours, panel wattage and a system-loss allowance. The tool sizes the array in kW, the number of panels and the roof area needed.</p></section>
+      <div class="ad-unit" aria-label="Advertisement"><span>Advertisement</span>
+      <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-0268893833921284" data-ad-slot="1234567890" data-ad-format="auto" data-full-width-responsive="true"></ins>
+      <script>(adsbygoogle = window.adsbygoogle || []).push({});</script></div>
+      <section class="content-band"><div class="section-heading"><h2>Use cases</h2><p>Real, repeatable workflows — not filler.</p></div><div class="example-grid" id="examples"></div></section>
+      <section class="content-band"><div class="section-heading"><h2>Good to know</h2><p>Every result is a planning-stage estimate that needs professional review.</p></div><ul class="checklist" id="limits"></ul></section>
+      <section class="content-band"><div class="section-heading"><h2>FAQ</h2></div><div id="faq"></div></section>
+      <section class="content-band"><div class="section-heading"><h2>Related tools</h2><p>Keep moving through the workflow.</p></div><div class="card-grid"><a class="tool-card" href="../far-calculator/"><span class="icon"><svg viewBox="0 0 44 44" width="44" height="44" fill="none" stroke="#137a6e" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg"><rect x="1.5" y="1.5" width="41" height="41" rx="11" fill="#137a6e" fill-opacity="0.08" stroke="#137a6e" stroke-opacity="0.25"/><rect x="13" y="11" width="18" height="22" rx="2"/><path d="M17 16 H27 M17 22 H19 M22 22 H24 M27 22 V28 M17 27 H19 M22 27 H24"/></svg></span><span class="meta">Calculators</span><h3>Floor Area Ratio (FAR) Calculator</h3><p>Check proposed floor area against an allowable FAR / plot ratio and see the remaining envelope instantly.</p><span class="open">Open tool →</span></a><a class="tool-card" href="../parking-calculator/"><span class="icon"><svg viewBox="0 0 44 44" width="44" height="44" fill="none" stroke="#137a6e" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg"><rect x="1.5" y="1.5" width="41" height="41" rx="11" fill="#137a6e" fill-opacity="0.08" stroke="#137a6e" stroke-opacity="0.25"/><rect x="13" y="11" width="18" height="22" rx="2"/><path d="M17 16 H27 M17 22 H19 M22 22 H24 M27 22 V28 M17 27 H19 M22 27 H24"/></svg></span><span class="meta">Calculators</span><h3>Parking Requirement Calculator</h3><p>Estimate required car stalls, accessible bays and EV-ready spaces from floor area and a provision ratio.</p><span class="open">Open tool →</span></a><a class="tool-card" href="../occupancy-load-calculator/"><span class="icon"><svg viewBox="0 0 44 44" width="44" height="44" fill="none" stroke="#137a6e" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg"><rect x="1.5" y="1.5" width="41" height="41" rx="11" fill="#137a6e" fill-opacity="0.08" stroke="#137a6e" stroke-opacity="0.25"/><rect x="13" y="11" width="18" height="22" rx="2"/><path d="M17 16 H27 M17 22 H19 M22 22 H24 M27 22 V28 M17 27 H19 M22 27 H24"/></svg></span><span class="meta">Calculators</span><h3>Occupancy Load &amp; Egress Calculator</h3><p>Estimate occupant load, exits required and total egress width from floor area and a load factor.</p><span class="open">Open tool →</span></a></div></section>
+    </div></section>
+  </main>
+<footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <a class="brand" href="../"><span class="brand-mark">AR</span><span>Architecture Render Studio</span></a>
+        <p>A free, browser-side toolkit of 52+ architectural calculators, prompt builders and references. Nothing leaves your browser unless you export it.</p>
+      </div>
+      <div class="footer-col"><h4>Studio</h4><a href="../tool/">Render studio</a><a href="../tools/">All tools</a><a href="../workspace/">Workspace</a><a href="../plans/">Plans</a></div><div class="footer-col"><h4>Popular</h4><a href="../far-calculator/">FAR calculator</a><a href="../stair-calculator/">Stair calculator</a><a href="../exterior-render-prompt/">Exterior render prompt</a><a href="../color-contrast-checker/">Colour contrast</a></div><div class="footer-col"><h4>Company</h4><a href="../about/">About</a><a href="../faq/">FAQ</a><a href="../integrations/">Integrations</a><a href="../privacy/">Privacy</a></div>
+    </div>
+    <div class="footer-base">
+      <span>© 2026 ai-architect.com · Planning-stage tools — verify with a licensed professional.</span>
+      <span><a href="../privacy/">Privacy</a> · <a href="../sitemap.xml">Sitemap</a></span>
+    </div>
+  </footer>
+<script>window.SITE_CONFIG = {"title":"Solar PV Sizing Calculator","kind":"calculator","fields":[{"id":"dailyKwh","label":"Daily energy use (kWh)","type":"number","default":18,"step":0.5},{"id":"sunHours","label":"Peak sun hours/day","type":"number","default":4.5,"step":0.1},{"id":"panelWatt","label":"Panel rating (W)","type":"number","default":450},{"id":"lossPct","label":"System losses (%)","type":"number","default":20}],"data":{},"engine":{"outputs":[{"label":"Array size","expr":"dailyKwh / sunHours / (1 - lossPct / 100)","unit":"kW","digits":2},{"label":"Panels needed","expr":"Math.ceil(dailyKwh / sunHours / (1 - lossPct / 100) * 1000 / panelWatt)","format":"integer"},{"label":"Roof area (≈2 m²/panel)","expr":"Math.ceil(dailyKwh / sunHours / (1 - lossPct / 100) * 1000 / panelWatt) * 2","unit":"m²","digits":0}],"rules":[{"if":"sunHours < 3.5","text":"Low sun hours — the array grows quickly. Verify local solar data and consider tilt/orientation gains."},{"text":"Confirm available unshaded roof area and inverter sizing against the calculated array."}],"defaultAdvice":"Inputs are within a typical planning range. Review assumptions before relying on the result."},"examples":[{"title":"House sizing","body":"Enter 18 kWh/day and local sun hours to estimate panels and roof area for a home."},{"title":"Loss sensitivity","body":"Raise system losses to see how shading and wiring derate the array."},{"title":"Roof fit","body":"Use the roof-area figure to check the array physically fits before detailed design."}],"faq":[{"q":"What are peak sun hours?","a":"The equivalent hours of full-strength sun per day for your location — pull it from a local solar resource map."},{"q":"Why a loss factor?","a":"Real systems lose ~15–25% to temperature, wiring, inverter and soiling. Adjust for your conditions."}],"limits":["Results are planning-stage estimates — confirm against local codes, manufacturer data, and a licensed professional before issuing for construction.","No login or private credentials are required; saved projects stay in this browser's local storage.","Advertising is kept clear of primary action controls and never blocks tool inputs."]};</script>
+  <script src="../app.js"></script>
+  <script src="../saas.js"></script>
+</body>
+</html>

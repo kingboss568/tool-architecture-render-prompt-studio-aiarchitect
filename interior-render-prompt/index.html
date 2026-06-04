@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Interior Render Prompt Builder | Architecture Render Studio</title>
+  <meta name="description" content="Build interior visualisation prompts with controlled materials, furniture, lighting temperature and lens.">
+  <link rel="canonical" href="https://render.ai-architect.com/interior-render-prompt/">
+  <meta name="theme-color" content="#137a6e">
+  <meta property="og:title" content="Interior Render Prompt Builder | Architecture Render Studio">
+  <meta property="og:description" content="Build interior visualisation prompts with controlled materials, furniture, lighting temperature and lens.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://render.ai-architect.com/interior-render-prompt/">
+  <meta name="google-adsense-account" content="ca-pub-0268893833921284">
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-0268893833921284" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://rsms.me/">
+  <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body style="--bg:#eef1ec;--panel:#ffffff;--ink:#16201f;--accent:#137a6e;--accent-2:#c9772d;--line:#d8ded6">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"Interior Render Prompt Builder","applicationCategory":"DesignApplication","operatingSystem":"Web browser","url":"https://render.ai-architect.com/interior-render-prompt/","description":"Build interior visualisation prompts with controlled materials, furniture, lighting temperature and lens.","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Will furniture scale look right?","acceptedAnswer":{"@type":"Answer","text":"The control language asks for true human scale and plausible proportions, which reduces the oversized-sofa problem common in raw prompts."}},{"@type":"Question","name":"Can I target a specific lens?","acceptedAnswer":{"@type":"Answer","text":"The photoreal pass specifies a 24mm interior lens; edit the copied prompt if you want a tighter focal length."}},{"@type":"Question","name":"Is it free?","acceptedAnswer":{"@type":"Answer","text":"Yes — it runs entirely in your browser with copy, save and JSON export."}}]}</script>
+<header class="topbar">
+    <a class="brand" href="../"><span class="brand-mark">AR</span><span>Architecture Render Studio<small>ai-architect.com</small></span></a>
+    <nav class="nav" aria-label="Primary">
+      <a href="../tools/">All tools</a>
+      <a href="../workspace/">Workspace</a>
+      <a href="../plans/">Plans</a>
+      <a href="../about/">About</a>
+      <a class="cta" href="../tool/">Open studio</a>
+    </nav>
+  </header>
+  <main>
+    <nav class="breadcrumb" aria-label="Breadcrumb"><a href="../">Home</a> / <a href="../tools/">Tools</a> / Interior Render Prompt Builder</nav>
+    <section class="app-grid"><nav class="side-nav" aria-label="App sections"><span class="side-label">Workspace</span><a href="../"><span class="dot"></span>Dashboard</a><a href="../tools/"><span class="dot"></span>All tools</a><a href="../tool/"><span class="dot"></span>Render studio</a><a href="../workspace/"><span class="dot"></span>Workspace</a><a href="../reports/"><span class="dot"></span>Reports</a><a href="../templates/"><span class="dot"></span>Templates</a><a href="../settings/"><span class="dot"></span>Settings</a><a href="../integrations/"><span class="dot"></span>Integrations</a><a href="../plans/"><span class="dot"></span>Plans</a><a href="../faq/"><span class="dot"></span>FAQ</a><a href="../about/"><span class="dot"></span>About</a></nav><div class="workspace-main">
+      <div class="page-title-panel"><div><span class="category-chip">Render Prompts</span><h1>Interior Render Prompt Builder</h1><p class="lede">Build interior visualisation prompts with controlled materials, furniture, lighting temperature and lens.</p><div class="tag-row"><span class="tag">interior render</span><span class="tag">AI prompt</span><span class="tag">FF&amp;E</span></div></div><div class="illus"><svg viewBox="0 0 120 120" width="120" height="120" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <rect x="3" y="3" width="114" height="114" rx="18" fill="#137a6e" fill-opacity="0.06" stroke="#137a6e" stroke-opacity="0.18"/>
+    <g transform="translate(38,38) scale(2.3)" stroke="#137a6e" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" fill="none"><path d="M13 30 L20 18 L27 26 L31 22 L31 30 Z" fill="#137a6e" fill-opacity="0.15"/><circle cx="17" cy="16" r="2.4"/><rect x="12" y="13" width="20" height="18" rx="2"/></g>
+  </svg></div></div>
+      <section class="hero-tool" id="tool">
+        <div class="tool-panel"><div class="panel-heading"><h2>Inputs</h2><span class="pill">Prompt builder</span></div><div class="fields-grid" id="toolFields"></div></div>
+        <div class="result-panel">
+      <div class="result-toolbar">
+        <h2>Result</h2>
+        <div class="toolbar-row">
+          <button class="button secondary" id="copyExport" type="button">Copy output</button>
+          <button class="button secondary" type="button" data-save-current>Save project</button>
+          <button class="button" type="button" data-download-current>Download JSON</button>
+        </div>
+      </div>
+      <div id="toolResult"></div>
+    </div>
+      </section>
+      <section class="content-band"><div class="section-heading"><h2>How it works</h2></div><p class="lede" style="max-width:78ch">Set the room, palette and light, and the tool returns concept, photoreal and detailing prompts tuned for believable interiors — correct ceiling heights, real furniture scale and coherent material reflections.</p></section>
+      <div class="ad-unit" aria-label="Advertisement"><span>Advertisement</span>
+      <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-0268893833921284" data-ad-slot="1234567890" data-ad-format="auto" data-full-width-responsive="true"></ins>
+      <script>(adsbygoogle = window.adsbygoogle || []).push({});</script></div>
+      <section class="content-band"><div class="section-heading"><h2>Use cases</h2><p>Real, repeatable workflows — not filler.</p></div><div class="example-grid" id="examples"></div></section>
+      <section class="content-band"><div class="section-heading"><h2>Good to know</h2><p>Every result is a planning-stage estimate that needs professional review.</p></div><ul class="checklist" id="limits"></ul></section>
+      <section class="content-band"><div class="section-heading"><h2>FAQ</h2></div><div id="faq"></div></section>
+      <section class="content-band"><div class="section-heading"><h2>Related tools</h2><p>Keep moving through the workflow.</p></div><div class="card-grid"><a class="tool-card" href="../exterior-render-prompt/"><span class="icon"><svg viewBox="0 0 44 44" width="44" height="44" fill="none" stroke="#137a6e" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg"><rect x="1.5" y="1.5" width="41" height="41" rx="11" fill="#137a6e" fill-opacity="0.08" stroke="#137a6e" stroke-opacity="0.25"/><path d="M13 30 L20 18 L27 26 L31 22 L31 30 Z" fill="#137a6e" fill-opacity="0.15"/><circle cx="17" cy="16" r="2.4"/><rect x="12" y="13" width="20" height="18" rx="2"/></svg></span><span class="meta">Render Prompts</span><h3>Exterior Render Prompt Builder</h3><p>Compose a controlled, buildable exterior visualisation prompt from massing, materials, context and light.</p><span class="open">Open tool →</span></a><a class="tool-card" href="../landscape-render-prompt/"><span class="icon"><svg viewBox="0 0 44 44" width="44" height="44" fill="none" stroke="#137a6e" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg"><rect x="1.5" y="1.5" width="41" height="41" rx="11" fill="#137a6e" fill-opacity="0.08" stroke="#137a6e" stroke-opacity="0.25"/><path d="M13 30 L20 18 L27 26 L31 22 L31 30 Z" fill="#137a6e" fill-opacity="0.15"/><circle cx="17" cy="16" r="2.4"/><rect x="12" y="13" width="20" height="18" rx="2"/></svg></span><span class="meta">Render Prompts</span><h3>Landscape &amp; Site Render Prompt</h3><p>Generate prompts for planting, hardscape and site context that stay seasonal and climate-appropriate.</p><span class="open">Open tool →</span></a><a class="tool-card" href="../aerial-render-prompt/"><span class="icon"><svg viewBox="0 0 44 44" width="44" height="44" fill="none" stroke="#137a6e" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg"><rect x="1.5" y="1.5" width="41" height="41" rx="11" fill="#137a6e" fill-opacity="0.08" stroke="#137a6e" stroke-opacity="0.25"/><path d="M13 30 L20 18 L27 26 L31 22 L31 30 Z" fill="#137a6e" fill-opacity="0.15"/><circle cx="17" cy="16" r="2.4"/><rect x="12" y="13" width="20" height="18" rx="2"/></svg></span><span class="meta">Render Prompts</span><h3>Aerial &amp; Masterplan Render Prompt</h3><p>Build bird's-eye and masterplan prompts with believable urban grain, density and circulation.</p><span class="open">Open tool →</span></a></div></section>
+    </div></section>
+  </main>
+<footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <a class="brand" href="../"><span class="brand-mark">AR</span><span>Architecture Render Studio</span></a>
+        <p>A free, browser-side toolkit of 52+ architectural calculators, prompt builders and references. Nothing leaves your browser unless you export it.</p>
+      </div>
+      <div class="footer-col"><h4>Studio</h4><a href="../tool/">Render studio</a><a href="../tools/">All tools</a><a href="../workspace/">Workspace</a><a href="../plans/">Plans</a></div><div class="footer-col"><h4>Popular</h4><a href="../far-calculator/">FAR calculator</a><a href="../stair-calculator/">Stair calculator</a><a href="../exterior-render-prompt/">Exterior render prompt</a><a href="../color-contrast-checker/">Colour contrast</a></div><div class="footer-col"><h4>Company</h4><a href="../about/">About</a><a href="../faq/">FAQ</a><a href="../integrations/">Integrations</a><a href="../privacy/">Privacy</a></div>
+    </div>
+    <div class="footer-base">
+      <span>© 2026 ai-architect.com · Planning-stage tools — verify with a licensed professional.</span>
+      <span><a href="../privacy/">Privacy</a> · <a href="../sitemap.xml">Sitemap</a></span>
+    </div>
+  </footer>
+<script>window.SITE_CONFIG = {"title":"Interior Render Prompt Builder","kind":"prompt","fields":[{"id":"subject","label":"Room / space","type":"text","default":"open-plan living and kitchen","hint":""},{"id":"style","label":"Interior direction","type":"select","options":["warm minimal","japandi","mid-century","soft industrial","coastal contemporary"],"default":"warm minimal"},{"id":"context","label":"Materials & furniture","type":"textarea","default":"oak floor, plaster walls, linen sofa, stone island, layered lighting","rows":4},{"id":"output","label":"Output format","type":"select","options":["photoreal render","concept render","FF&E mood frame"],"default":"photoreal render"},{"id":"mood","label":"Light & mood","type":"select","options":["soft morning","warm evening","bright daylight","moody low-key"],"default":"warm evening"}],"data":{},"engine":{"variants":[{"title":"Concept render","body":"Interior of {{subject}}, {{style}} direction, {{context}}, {{mood}} lighting, realistic ceiling height and furniture scale, {{output}}, calm composition."},{"title":"Photoreal pass","body":"Photorealistic interior of {{subject}}, {{style}}, {{context}}, physically based materials, accurate reflections, {{mood}}, 24mm lens, balanced exposure, true human scale."},{"title":"Material & FF&E","body":"Close framing of {{subject}} emphasising {{context}}. Show real material joints, plausible furniture proportions and layered {{mood}} light. No distorted perspective."}]},"examples":[{"title":"Palette test","body":"Lock the room and furniture, swap the interior direction to compare 'japandi' against 'mid-century' before sourcing finishes."},{"title":"Lighting study","body":"Hold all inputs and cycle light settings to see how the same living space reads in morning versus warm evening light."},{"title":"Client mood frame","body":"Use the FF&E output to produce a tight, furniture-led frame for a moodboard rather than a wide architectural shot."}],"faq":[{"q":"Will furniture scale look right?","a":"The control language asks for true human scale and plausible proportions, which reduces the oversized-sofa problem common in raw prompts."},{"q":"Can I target a specific lens?","a":"The photoreal pass specifies a 24mm interior lens; edit the copied prompt if you want a tighter focal length."},{"q":"Is it free?","a":"Yes — it runs entirely in your browser with copy, save and JSON export."}],"limits":["Results are planning-stage estimates — confirm against local codes, manufacturer data, and a licensed professional before issuing for construction.","No login or private credentials are required; saved projects stay in this browser's local storage.","Advertising is kept clear of primary action controls and never blocks tool inputs."]};</script>
+  <script src="../app.js"></script>
+  <script src="../saas.js"></script>
+</body>
+</html>

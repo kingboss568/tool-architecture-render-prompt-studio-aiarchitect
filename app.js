@@ -233,6 +233,21 @@ function contrastTool() {
   return resultShell(`Contrast ratio: <strong>${ratio.toFixed(2)}:1</strong>`, html, `Contrast ratio: ${ratio.toFixed(2)}:1\nNormal text: ${normal}\nLarge text: ${large}`);
 }
 
+function converterTool() {
+  const data = inputs();
+  const units = config.engine?.units || [];
+  const value = Number(data.value || 0);
+  const fromUnit = units.find((unit) => unit.label === data.from) || units[0];
+  const toUnit = units.find((unit) => unit.label === data.to) || units[units.length - 1];
+  const base = value * (fromUnit?.factor || 1);
+  const result = base / (toUnit?.factor || 1);
+  const precision = config.engine?.precision ?? 4;
+  const rows = units.map((unit) => ({ label: unit.label, value: base / unit.factor }));
+  const html = `<div class="result-figure"><div class="convert-value"><span>${escapeHtml(formatNumber(value, 4))} ${escapeHtml(fromUnit?.label || "")}</span><strong>${escapeHtml(result.toFixed(precision))} ${escapeHtml(toUnit?.label || "")}</strong></div></div><div class="table-wrap"><table><thead><tr><th>Unit</th><th>Equivalent value</th></tr></thead><tbody>${rows.map((row) => `<tr><td>${escapeHtml(row.label)}</td><td>${escapeHtml(row.value.toLocaleString("en-US", { maximumFractionDigits: precision }))}</td></tr>`).join("")}</tbody></table></div>`;
+  const exportText = `${config.title}\n${value} ${fromUnit?.label} = ${result.toFixed(precision)} ${toUnit?.label}\n\nFull table\n${rows.map((row) => `${row.label}: ${row.value.toLocaleString("en-US", { maximumFractionDigits: precision })}`).join("\n")}`;
+  return resultShell(`<strong>${escapeHtml(result.toFixed(precision))} ${escapeHtml(toUnit?.label || "")}</strong> from ${escapeHtml(formatNumber(value, 4))} ${escapeHtml(fromUnit?.label || "")}.`, html, exportText);
+}
+
 function renderResult() {
   const map = {
     calculator: calculatorTool,
@@ -242,15 +257,11 @@ function renderResult() {
     checklist: checklistTool,
     matrix: matrixTool,
     prompt: promptTool,
-    contrast: contrastTool
+    contrast: contrastTool,
+    converter: converterTool
   };
-  qs("#toolResult").innerHTML = (map[config.kind] || builderTool)();
-}
-
-function renderStaticContent() {
-  qs("#examples").innerHTML = (config.examples || []).map((item) => `<article><h3>${escapeHtml(item.title)}</h3><p>${escapeHtml(item.body)}</p></article>`).join("");
-  qs("#faq").innerHTML = (config.faq || []).map((item) => `<details><summary>${escapeHtml(item.q)}</summary><p>${escapeHtml(item.a)}</p></details>`).join("");
-  qs("#limits").innerHTML = (config.limits || []).map((item) => `<li>${escapeHtml(item)}</li>`).join("");
+  const node = qs("#toolResult");
+  if (node) node.innerHTML = (map[config.kind] || builderTool)();
 }
 
 async function copyExport() {
@@ -270,14 +281,27 @@ async function copyExport() {
   }
 }
 
+function renderStaticContent() {
+  const examples = qs("#examples");
+  if (examples) examples.innerHTML = (config.examples || []).map((item) => `<article><h3>${escapeHtml(item.title)}</h3><p>${escapeHtml(item.body)}</p></article>`).join("");
+  const faq = qs("#faq");
+  if (faq) faq.innerHTML = (config.faq || []).map((item) => `<details><summary>${escapeHtml(item.q)}</summary><p>${escapeHtml(item.a)}</p></details>`).join("");
+  const limits = qs("#limits");
+  if (limits) limits.innerHTML = (config.limits || []).map((item) => `<li>${escapeHtml(item)}</li>`).join("");
+}
+
 function boot() {
   initState();
-  renderForm();
-  renderResult();
+  const fields = qs("#toolFields");
+  if (fields) {
+    renderForm();
+    renderResult();
+    fields.addEventListener("input", updateFromEvent);
+    fields.addEventListener("change", updateFromEvent);
+  }
   renderStaticContent();
-  qs("#toolFields").addEventListener("input", updateFromEvent);
-  qs("#toolFields").addEventListener("change", updateFromEvent);
-  qs("#copyExport").addEventListener("click", copyExport);
+  const copyButton = qs("#copyExport");
+  if (copyButton) copyButton.addEventListener("click", copyExport);
 }
 
 boot();
