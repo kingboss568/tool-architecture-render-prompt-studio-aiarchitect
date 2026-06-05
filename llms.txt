@@ -1,0 +1,45 @@
+Architecture Render Prompt Studio
+
+Architecture Render Prompt Studio is a practical ai lab workspace for operations analyst teams who need a working tool, reference pages, exportable notes, and SEO-ready guidance in one static site.
+
+Key sections:
+- https://render.ai-architect.com/
+- https://render.ai-architect.com/tool/
+- https://render.ai-architect.com/workspace/
+- https://render.ai-architect.com/reports/
+- https://render.ai-architect.com/guides/
+- https://render.ai-architect.com/library/
+- https://render.ai-architect.com/templates/
+- https://render.ai-architect.com/compare/
+- https://render.ai-architect.com/checklists/
+- https://render.ai-architect.com/integrations/
+- https://render.ai-architect.com/settings/
+- https://render.ai-architect.com/plans/
+- https://render.ai-architect.com/faq/
+- https://render.ai-architect.com/privacy/
+- https://render.ai-architect.com/about/
+- https://render.ai-architect.com/guides/estimate-token-spend-1/
+- https://render.ai-architect.com/guides/draft-a-prompt-system-2/
+- https://render.ai-architect.com/guides/compare-model-routes-3/
+- https://render.ai-architect.com/guides/plan-batch-capacity-4/
+- https://render.ai-architect.com/guides/audit-image-generation-costs-5/
+- https://render.ai-architect.com/guides/export-a-workflow-brief-6/
+- https://render.ai-architect.com/guides/estimate-token-spend-7/
+- https://render.ai-architect.com/guides/draft-a-prompt-system-8/
+- https://render.ai-architect.com/guides/compare-model-routes-9/
+- https://render.ai-architect.com/guides/plan-batch-capacity-10/
+- https://render.ai-architect.com/guides/audit-image-generation-costs-11/
+- https://render.ai-architect.com/guides/export-a-workflow-brief-12/
+- https://render.ai-architect.com/guides/estimate-token-spend-13/
+- https://render.ai-architect.com/guides/draft-a-prompt-system-14/
+- https://render.ai-architect.com/guides/compare-model-routes-15/
+- https://render.ai-architect.com/guides/plan-batch-capacity-16/
+- https://render.ai-architect.com/guides/audit-image-generation-costs-17/
+- https://render.ai-architect.com/guides/export-a-workflow-brief-18/
+- https://render.ai-architect.com/guides/estimate-token-spend-19/
+- https://render.ai-architect.com/guides/draft-a-prompt-system-20/
+- https://render.ai-architect.com/guides/compare-model-routes-21/
+- https://render.ai-architect.com/guides/plan-batch-capacity-22/
+- https://render.ai-architect.com/guides/audit-image-generation-costs-23/
+- https://render.ai-architect.com/guides/export-a-workflow-brief-24/
+- https://render.ai-architect.com/guides/estimate-token-spend-25/

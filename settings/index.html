@@ -3,67 +3,60 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Settings | Architecture Render Studio</title>
-  <meta name="description" content="Local preferences for currency, units and display name.">
+  <title>Settings | Architecture Render Prompt Studio</title>
+  <meta name="description" content="Browser-side preferences for Architecture Render Prompt Studio.">
   <link rel="canonical" href="https://render.ai-architect.com/settings/">
-  <meta name="theme-color" content="#137a6e">
-  <meta property="og:title" content="Settings | Architecture Render Studio">
-  <meta property="og:description" content="Local preferences for currency, units and display name.">
-  <meta property="og:type" content="website">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <meta property="og:title" content="Settings | Architecture Render Prompt Studio">
+  <meta property="og:description" content="Browser-side preferences for Architecture Render Prompt Studio.">
   <meta property="og:url" content="https://render.ai-architect.com/settings/">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://render.ai-architect.com/assets/visual.png">
+  <meta name="twitter:card" content="summary_large_image">
   <meta name="google-adsense-account" content="ca-pub-0268893833921284">
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-0268893833921284" crossorigin="anonymous"></script>
-  <link rel="preconnect" href="https://rsms.me/">
-  <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+  <link rel="preload" as="image" href="../assets/visual.png">
   <link rel="stylesheet" href="../styles.css">
+  <script type="application/ld+json">[{"@context":"https://schema.org","@type":"WebPage","name":"Settings","description":"Browser-side preferences for Architecture Render Prompt Studio.","url":"https://render.ai-architect.com/settings/","applicationCategory":"BusinessApplication","isPartOf":{"@type":"WebSite","name":"Architecture Render Prompt Studio","url":"https://render.ai-architect.com/"}},{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Architecture Render Prompt Studio","item":"https://render.ai-architect.com/"},{"@type":"ListItem","position":2,"name":"Settings","item":"https://render.ai-architect.com/settings/"}]}]</script>
 </head>
-<body style="--bg:#eef1ec;--panel:#ffffff;--ink:#16201f;--accent:#137a6e;--accent-2:#c9772d;--line:#d8ded6">
-<header class="topbar">
-    <a class="brand" href="../"><span class="brand-mark">AR</span><span>Architecture Render Studio<small>ai-architect.com</small></span></a>
-    <nav class="nav" aria-label="Primary">
-      <a href="../tools/">All tools</a>
-      <a href="../workspace/">Workspace</a>
-      <a href="../plans/">Plans</a>
-      <a href="../about/">About</a>
-      <a class="cta" href="../tool/">Open studio</a>
-    </nav>
+<body style="--bg:#f6f6f3;--panel:#ffffff;--ink:#171717;--muted:#676767;--accent:#236b64;--accent-2:#d05c3e;--line:#d7d7d2;--dark:#121212" data-archetype="ai" data-layout="split">
+  <header class="topbar">
+    <a class="brand" href="../"><span class="brand-mark">AR</span><span>render.ai-architect.com</span></a>
+    <nav class="nav" aria-label="Primary"><a href="../tool/">Tool</a><a href="../guides/">Guides</a><a href="../library/">Library</a><a href="../templates/">Templates</a><a href="../compare/">Compare</a></nav>
   </header>
   <main>
-    <nav class="breadcrumb"><a href="../">Home</a> / Settings</nav>
-    <section class="app-grid"><nav class="side-nav" aria-label="App sections"><span class="side-label">Workspace</span><a href="../"><span class="dot"></span>Dashboard</a><a href="../tools/"><span class="dot"></span>All tools</a><a href="../tool/"><span class="dot"></span>Render studio</a><a href="../workspace/"><span class="dot"></span>Workspace</a><a href="../reports/"><span class="dot"></span>Reports</a><a href="../templates/"><span class="dot"></span>Templates</a><a href="../settings/" aria-current="page"><span class="dot"></span>Settings</a><a href="../integrations/"><span class="dot"></span>Integrations</a><a href="../plans/"><span class="dot"></span>Plans</a><a href="../faq/"><span class="dot"></span>FAQ</a><a href="../about/"><span class="dot"></span>About</a></nav><div class="workspace-main">
-      <div class="page-title-panel"><div><span class="category-chip">Workspace</span><h1>Settings</h1><p class="lede">Local preferences for currency, units and display name.</p></div><div class="illus"><svg viewBox="0 0 120 120" width="120" height="120" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <rect x="3" y="3" width="114" height="114" rx="18" fill="#137a6e" fill-opacity="0.06" stroke="#137a6e" stroke-opacity="0.18"/>
-    <g transform="translate(38,38) scale(2.3)" stroke="#137a6e" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" fill="none"><rect x="13" y="11" width="18" height="22" rx="2"/><path d="M17 16 H27 M17 22 H19 M22 22 H24 M27 22 V28 M17 27 H19 M22 27 H24"/></g>
-  </svg></div></div>
-      <div class="ad-unit" aria-label="Advertisement"><span>Advertisement</span>
-      <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-0268893833921284" data-ad-slot="1234567890" data-ad-format="auto" data-full-width-responsive="true"></ins>
-      <script>(adsbygoogle = window.adsbygoogle || []).push({});</script></div>
-      <section class="content-band"><div class="section-heading"><h2>Preferences</h2><p>Stored locally — never sent anywhere.</p></div>
-        <div class="mini-form" style="max-width:520px">
-          <label>Display name<input type="text" data-setting="name" data-default="" placeholder="Your name or studio"></label>
-          <label>Default currency<input type="text" data-setting="currency" data-default="USD" placeholder="USD"></label>
-          <label>Measurement system<select data-setting="units"><option value="metric">Metric (m, mm)</option><option value="imperial">Imperial (ft, in)</option></select></label>
-          <div class="action-row"><button class="button" type="button" data-save-settings>Save preferences</button><span data-settings-status class="lede" style="margin:0"></span></div>
-        </div>
-      </section>
-      <section class="content-band"><div class="section-heading"><h2>Privacy</h2></div><p class="lede" style="max-width:70ch">No account is required and nothing you enter is uploaded. Preferences and saved projects live only in this browser. See the <a href="../privacy/">privacy page</a> for details.</p></section>
-    </div></section>
-  </main>
-<footer class="footer">
-    <div class="footer-inner">
-      <div class="footer-brand">
-        <a class="brand" href="../"><span class="brand-mark">AR</span><span>Architecture Render Studio</span></a>
-        <p>A free, browser-side toolkit of 52+ architectural calculators, prompt builders and references. Nothing leaves your browser unless you export it.</p>
+    <section class="hero hero-split">
+    <div class="hero-copy">
+      <p class="eyebrow">Local preferences</p>
+      <h1>Settings</h1>
+      <p class="lede">Browser-side preferences for Architecture Render Prompt Studio.</p>
+      <div class="action-row">
+        <a class="button" href="../tool/">Model the workflow</a>
+        <a class="button secondary" href="../guides/">Read guides</a>
       </div>
-      <div class="footer-col"><h4>Studio</h4><a href="../tool/">Render studio</a><a href="../tools/">All tools</a><a href="../workspace/">Workspace</a><a href="../plans/">Plans</a></div><div class="footer-col"><h4>Popular</h4><a href="../far-calculator/">FAR calculator</a><a href="../stair-calculator/">Stair calculator</a><a href="../exterior-render-prompt/">Exterior render prompt</a><a href="../color-contrast-checker/">Colour contrast</a></div><div class="footer-col"><h4>Company</h4><a href="../about/">About</a><a href="../faq/">FAQ</a><a href="../integrations/">Integrations</a><a href="../privacy/">Privacy</a></div>
+      <div class="hero-stats">
+        <div><span>Pages</span><strong>121</strong></div>
+        <div><span>Family</span><strong>AI Lab</strong></div>
+        <div><span>Export</span><strong>Copy / JSON</strong></div>
+      </div>
     </div>
-    <div class="footer-base">
-      <span>© 2026 ai-architect.com · Planning-stage tools — verify with a licensed professional.</span>
-      <span><a href="../privacy/">Privacy</a> · <a href="../sitemap.xml">Sitemap</a></span>
+    <figure class="visual-frame">
+      <img src="../assets/visual.png" alt="Architecture Render Prompt Studio visual interface concept">
+    </figure>
+  </section><section class="content-band">
+    <div class="section-heading"><span class="eyebrow">Preferences</span><h2>Local Settings</h2></div>
+    <div class="mini-form">
+      <label>Default unit <select data-setting="unit" data-default="metric"><option value="metric">Metric</option><option value="imperial">Imperial</option></select></label>
+      <label>Export label <input data-setting="label" data-default="Review packet" value="Review packet"></label>
+      <label>Notes <textarea data-setting="notes" data-default="" rows="4"></textarea></label>
+      <button class="button" data-save-settings type="button">Save settings</button>
+      <p class="muted" data-settings-status>Stored in this browser only.</p>
     </div>
-  </footer>
-<script>window.SITE_CONFIG = {"title":"Render Prompt Studio","kind":"prompt","fields":[{"id":"projectType","label":"Project type","type":"text","default":"compact mixed-use building"},{"id":"style","label":"Design direction","type":"select","options":["quiet modern","warm minimal","urban adaptive reuse","tropical contemporary"],"default":"warm minimal"},{"id":"constraints","label":"Constraints","type":"textarea","default":"narrow site, shaded entry, efficient circulation, realistic structure","rows":4},{"id":"outputFormat","label":"Output format","type":"select","options":["concept sketch","render prompt","diagram prompt","client brief"],"default":"render prompt"}],"data":{},"engine":{"variants":[{"title":"Concept","body":"{{projectType}}, {{style}} architectural direction, {{constraints}}, clear massing, realistic structure, {{outputFormat}}, practical material logic."},{"title":"Technical","body":"{{projectType}} with {{constraints}}. Produce a technical architecture diagram prompt with circulation, envelope, services, and review labels."},{"title":"Client","body":"Client-facing {{outputFormat}} for {{projectType}}. Keep the language professional, avoid impossible structure, and emphasize buildable decisions."}]},"examples":[{"title":"First working pass","body":"Turn a loose brief into a copy-ready prompt set you can review, save or export."},{"title":"Repeat workflow","body":"Saved projects stay in this browser so you can return to the same workflow without a login."},{"title":"Professional review","body":"Use the result as a structured starter, then confirm rules, standards and assumptions before final use."}],"faq":[{"q":"Is the studio free?","a":"Yes — a free, browser-side tool with copy, save and JSON export."},{"q":"Does it replace a professional?","a":"No. It creates a strong first pass; final decisions still need qualified review."},{"q":"Where are projects saved?","a":"In this browser's local storage, for the static build."}],"limits":["Do not treat generated outputs as legal, code, engineering, tax or safety certification.","No private credentials are required by this static site.","Ad placements stay outside primary action controls."]};</script>
-  <script src="../app.js"></script>
+  </section>
+  </main>
+  <footer class="footer"><span>Architecture Render Prompt Studio for ai-architect.com</span><a href="../privacy/">Privacy</a><a href="../sitemap.xml">Sitemap</a></footer>
+  
   <script src="../saas.js"></script>
+  <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
 </body>
 </html>
